@@ -1,2 +1,2 @@
-### [AFpine's BLOG](https://afpine.github.io/)
+# [AFpine's BLOG](https://afpine.github.io/)
 ---
