@@ -1,0 +1,40 @@
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 250px 0;
+    background-color: white;
+    
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#top {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+#top a {
+    text-decoration: none;
+    color: black;
+}
+#introduce {
+    border-top: lightgray solid 1px;
+}
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.ltor {
+    grid-column: span 6;
+    text-align: left;
+}
+.rtol {
+    grid-column: span 6;
+    text-align: right;
+}
