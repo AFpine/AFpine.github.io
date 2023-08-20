@@ -3,29 +3,65 @@ body {
     padding: 0 0 250px 0;
     background-color: white;
     
-    font-family: Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 16px;
-    line-height: 1.5;
+    /* line-height: 1.5; */
     color: #333;
 }
 .container {
+    max-width: 980px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
 #top {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 23px;
+    border-bottom: solid 1px gray;
 }
 #top a {
     text-decoration: none;
-    color: black;
+    color: rgb(77, 88, 81);
 }
-#introduce {
-    border-top: lightgray solid 1px;
+#profile {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
+#profile-pic {
+    grid-column: span 6;
+    text-align: right;
+    align-items: center;
+    padding-right: 10px;
+}
+#profile-pic img {
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+}
+#profile-article {
+    grid-column: span 6;
+    padding-left: 10px;
+    /* font-family:sans-serif; */
+}
+#profile-article h1 {
+    font-size: 38px;
+    font-weight: normal;
+}
+#profile-article p {
+    font-size: 18px;
+    color: gray;
+}
+#profile-article #contact {
+    font-size: 15px;
+    color: rgb(72, 72, 72);
+}
+#profile-article #contact a {
+    text-decoration: none;
+    color: rgb(72, 72, 72);
+}
+
 .row {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -37,4 +73,14 @@ body {
 .rtol {
     grid-column: span 6;
     text-align: right;
+}
+#about h1:after {
+    content: "";
+    display: block;
+    width: 10%;
+    border-bottom: solid 1px lightgray;
+    margin-bottom: 5px;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
 }
