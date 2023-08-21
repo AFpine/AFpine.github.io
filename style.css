@@ -9,11 +9,16 @@ body {
     color: #333;
 }
 .container {
-    max-width: 980px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+@media (min-width: 1000px) {
+    .container {
+        width: 970px;
+    }
+
 }
 #top {
     padding-top: 20px;
@@ -43,11 +48,19 @@ body {
 #profile-article {
     grid-column: span 6;
     padding-left: 10px;
-    /* font-family:sans-serif; */
+}
+@media (max-width: 999px) {
+    #profile-pic {
+        grid-column: span 12;
+        text-align: center;
+    }
+    #profile-article {
+        grid-column: span 12;
+        text-align: center;
+    }
 }
 #profile-article h1 {
     font-size: 38px;
-    font-weight: normal;
 }
 #profile-article p {
     font-size: 18px;
@@ -74,13 +87,45 @@ body {
     grid-column: span 6;
     text-align: right;
 }
-#about h1:after {
+h1 {
+    font-size: 34px;
+    font-weight: normal;
+}
+#overview h1::after {
     content: "";
     display: block;
-    width: 10%;
+    width: 15%;
     border-bottom: solid 1px lightgray;
     margin-bottom: 5px;
 }
+#education h1::after {
+    content: "";
+    display: block;
+    width: 16%;
+    border-bottom: solid 1px lightgray;
+    margin-bottom: 5px;
+}
+#achieve h1::after {
+    content: "";
+    display: block;
+    width: 22%;
+    border-bottom: solid 1px lightgray;
+    margin-bottom: 5px;
+}
+#cpprofile h1::after {
+    content: "";
+    display: block;
+    width: 17%;
+    border-bottom: solid 1px lightgray;
+    margin-bottom: 5px;
+}
+li {
+    margin: 10px;
+}
 p {
     font-family: 'Times New Roman', Times, serif;
+}
+a {
+    text-decoration: none;
+    color: gray;
 }
