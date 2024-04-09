@@ -17,6 +17,9 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+#cv {
+    text-align: center;
+}
 @media (min-width: 1000px) {
     .container {
         width: 970px;
